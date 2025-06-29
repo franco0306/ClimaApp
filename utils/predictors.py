@@ -14,7 +14,7 @@ def predecir_ciudad(ciudad):
 
     # TEMPERATURA
     X_temp, y_temp, scaler = escalar_y_secuenciar(df, features, "temperatura", 10)
-    modelo_temp = tf.keras.models.load_model("models/best_model.keras")
+    modelo_temp = tf.keras.models.load_model("models/best_model.h5")
     last_seq = X_temp[-1]
     pred_temp = []
     for _ in range(14):
