@@ -28,7 +28,7 @@ def predecir_ciudad(ciudad):
 
     # LLUVIA
     X_rain, y_rain, _ = escalar_y_secuenciar(df, features, "lluvia", 10)
-    modelo_rain = tf.keras.models.load_model("models/best_model_lluvia.keras")
+    modelo_rain = tf.keras.models.load_model("models/best_model_lluvia.h5")
     last_seq_rain = X_rain[-1]
     pred_rain = []
     for _ in range(14):
