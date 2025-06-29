@@ -6,3 +6,4 @@ scikit-learn
 requests
 geopy
 plotly
+python-3.10
